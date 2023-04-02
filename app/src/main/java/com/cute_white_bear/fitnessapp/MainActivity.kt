@@ -19,7 +19,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -160,8 +159,7 @@ fun FatBurnExerciseList(
         verticalArrangement = Arrangement.spacedBy(32.dp),
         modifier = modifier.padding(16.dp)
     ) {
-        item {
-            FatBurnDescriptionText() }
+        item { FatBurnDescriptionText() }
         items(exerciseList) { exercise ->
             FatBurnExerciseItem(exercise)
         }
