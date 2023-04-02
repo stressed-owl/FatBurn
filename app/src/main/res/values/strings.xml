@@ -29,6 +29,7 @@
     <string name="exercise_13">Decline Bench Press</string>
     <string name="exercise_14">Machine Chest Fly</string>
     <string name="exercise_15">Push-Up Against Wall</string>
+    <string name="exercise_16">Kneeling Push-Up</string>
 
     <string name="exercise_1_desc_part_1">Sit on the floor with a box or a bench behind you and a dumbbell over your the crease of your hips (the amount of weight you go for should be informed by your goal and capability).</string>
     <string name="exercise_1_desc_part_2">Roll the bar so that it’s directly over your hips and lean back so that your shoulder blades rest on the bench.</string>
@@ -95,4 +96,10 @@
     <string name="exercise_15_desc_part_3">Lower yourself as deep as you can, while inhaling.</string>
     <string name="exercise_15_desc_part_4">Reverse the motion when you’ve touched the wall, and push yourself up to straight arms again while exhaling.</string>
     <string name="exercise_15_desc_part_5">Repeat for reps.</string>
+
+    <string name="exercise_16_desc_part_1">Assume the starting position, with hands slightly wider than shoulder width apart.</string>
+    <string name="exercise_16_desc_part_2">Try to form a straight line from head to knees, and brace your abdomen slightly.</string>
+    <string name="exercise_16_desc_part_3">Lower yourself as deep as you can, while inhaling.</string>
+    <string name="exercise_16_desc_part_4">Reverse the motion when you’ve touched the floor, and push yourself up to straight arms again while exhaling.</string>
+    <string name="exercise_16_desc_part_5">Repeat for reps.</string>
 </resources>
