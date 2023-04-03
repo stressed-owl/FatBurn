@@ -17,8 +17,13 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Person
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -60,6 +65,9 @@ fun FatBurnUI(modifier: Modifier = Modifier) {
         topBar = {
             FatBurnTopAppBar()
         },
+        bottomBar = {
+            FatBurnBottomAppBar()
+        }
     ) {
         Column { FatBurnExerciseList(DataSource.list) }
     }
@@ -73,8 +81,7 @@ fun FatBurnTopAppBar(
         .fillMaxWidth()
         .background(MaterialTheme.colors.primary)
     ) {
-        Row(modifier = modifier.padding(8.dp),
-        ) {
+        Row(modifier = modifier.padding(8.dp)) {
             Image(
                 painter = painterResource(R.drawable.fitness_logo),
                 contentDescription = null,
@@ -90,10 +97,32 @@ fun FatBurnTopAppBar(
 }
 
 @Composable
-fun FatBurnBottomAppBar(
-    modifier: Modifier = Modifier
-) {
-    // TODO: To add bottom app bar 
+fun FatBurnBottomAppBar(modifier: Modifier = Modifier) {
+    BottomAppBar {
+        Row(modifier = modifier
+            .fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+        ) {
+            IconButton(onClick = {}) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Icon(Icons.Default.Home, contentDescription = null)
+                    Text(text = stringResource(R.string.home))
+                }
+            }
+            IconButton(onClick = {}) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Icon(Icons.Default.Person, contentDescription = null)
+                    Text(text = stringResource(R.string.account))
+                }
+            }
+            IconButton(onClick = {}) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Icon(Icons.Default.Settings, contentDescription = null)
+                    Text(text = stringResource(R.string.settings))
+                }
+            }
+        }
+    }
 }
 
 @Composable
@@ -155,9 +184,20 @@ fun FatBurnExerciseList(
     exerciseList: List<Exercise>,
     modifier: Modifier = Modifier,
 ) {
+    /**
+     * if element is the last one in the list, we add additional padding to it
+     * to beautifully display card. Otherwise, newly added bottom app bar would overlap
+     * the last card in the list and it would be difficult to see the additional information
+     * about the exercise
+     */
+    var bottomDp = 0
+    for (exercise in exerciseList) {
+        bottomDp = if (exercise.id == exerciseList.lastIndex + 1) 64 else 16
+    }
+    
     LazyColumn(
-        verticalArrangement = Arrangement.spacedBy(32.dp),
-        modifier = modifier.padding(16.dp)
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+        modifier = modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp, bottom = bottomDp.dp)
     ) {
         item { FatBurnDescriptionText() }
         items(exerciseList) { exercise ->
