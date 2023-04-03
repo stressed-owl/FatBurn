@@ -166,6 +166,7 @@ object DataSource {
             listOf(R.string.chest, R.string.front_deltoid, R.string.triceps, R.string.abs)
         ),
         Exercise(
+            17,
             R.drawable.exercise_17,
             R.string.exercise_17,
             listOf(
