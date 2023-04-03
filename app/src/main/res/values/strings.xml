@@ -31,6 +31,10 @@
     <string name="exercise_15">Push-Up Against Wall</string>
     <string name="exercise_16">Kneeling Push-Up</string>
 
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+
     <string name="exercise_1_desc_part_1">Sit on the floor with a box or a bench behind you and a dumbbell over your the crease of your hips (the amount of weight you go for should be informed by your goal and capability).</string>
     <string name="exercise_1_desc_part_2">Roll the bar so that it’s directly over your hips and lean back so that your shoulder blades rest on the bench.</string>
     <string name="exercise_1_desc_part_3">Drive through the heels of your feet, pushing up your hips (shoulders and feet supporting you).</string>
