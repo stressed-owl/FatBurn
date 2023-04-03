@@ -13,7 +13,12 @@
     <string name="calves">calves</string>
     <string name="chest">chest</string>
     <string name="front_deltoid">front deltoid</string>
+    <string name="lateral_deltoid">lateral deltoid</string>
+    <string name="trapezius">trapezius</string>
+    <string name="biceps">biceps</string>
+
     <string name="muscles_worked">Muscles worked: </string>
+
     <string name="exercise_1">Dumbbell hip bridge</string>
     <string name="exercise_2">Deadbug</string>
     <string name="exercise_3">Dumbbell lunge</string>
@@ -30,6 +35,7 @@
     <string name="exercise_14">Machine Chest Fly</string>
     <string name="exercise_15">Push-Up Against Wall</string>
     <string name="exercise_16">Kneeling Push-Up</string>
+    <string name="exercise_17">Monkey Row</string>
 
     <string name="exercise_1_desc_part_1">Sit on the floor with a box or a bench behind you and a dumbbell over your the crease of your hips (the amount of weight you go for should be informed by your goal and capability).</string>
     <string name="exercise_1_desc_part_2">Roll the bar so that it’s directly over your hips and lean back so that your shoulder blades rest on the bench.</string>
@@ -102,4 +108,8 @@
     <string name="exercise_16_desc_part_3">Lower yourself as deep as you can, while inhaling.</string>
     <string name="exercise_16_desc_part_4">Reverse the motion when you’ve touched the floor, and push yourself up to straight arms again while exhaling.</string>
     <string name="exercise_16_desc_part_5">Repeat for reps.</string>
+
+    <string name="exercise_17_desc_part_1">With your arms by your sides, hold a dumbbell in each hand.</string>
+    <string name="exercise_17_desc_part_2">Pull the dumbbells straight up as far as you can.</string>
+    <string name="exercise_17_desc_part_3">With control, lower the dumbbells back to the starting position.</string>
 </resources>
