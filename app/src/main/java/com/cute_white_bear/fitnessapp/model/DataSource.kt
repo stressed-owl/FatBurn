@@ -5,6 +5,7 @@ import com.cute_white_bear.fitnessapp.R
 object DataSource {
     val list = listOf(
         Exercise(
+            1,
             R.drawable.exercise_1,
             R.string.exercise_1,
             listOf(
@@ -16,6 +17,7 @@ object DataSource {
             listOf(R.string.glutes),
         ),
         Exercise(
+            2,
             R.drawable.exercise_2,
             R.string.exercise_2,
             listOf(
@@ -26,6 +28,7 @@ object DataSource {
             listOf(R.string.abs)
         ),
         Exercise(
+            3,
             R.drawable.exercise_3,
             R.string.exercise_3,
             listOf(
@@ -36,6 +39,7 @@ object DataSource {
             listOf(R.string.glutes, R.string.quads, R.string.hamstrings)
         ),
         Exercise(
+            4,
             R.drawable.exercise_4,
             R.string.exercise_4,
             listOf(
@@ -47,48 +51,56 @@ object DataSource {
             listOf(R.string.abs, R.string.shoulders)
         ),
         Exercise(
+            5,
             R.drawable.exercise_5,
             R.string.exercise_5,
             listOf(R.string.exercise_5_desc_part_1, R.string.exercise_5_desc_part_2),
             listOf(R.string.core, R.string.hamstrings)
         ),
         Exercise(
+            6,
             R.drawable.exercise_6,
             R.string.exercise_6,
             listOf(R.string.exercise_6_desc_part_1, R.string.exercise_6_desc_part_2),
             listOf(R.string.shoulders, R.string.triceps)
         ),
         Exercise(
+            7,
             R.drawable.exercise_7,
             R.string.exercise_7,
             listOf(R.string.exercise_7_desc_part_1, R.string.exercise_7_desc_part_2),
             listOf(R.string.hip_flexors, R.string.quads, R.string.lats, R.string.calves, R.string.glutes, R.string.hamstrings)
         ),
         Exercise(
+            8,
             R.drawable.exercise_8,
             R.string.exercise_8,
             listOf(R.string.exercise_8_desc_part_1, R.string.exercise_8_desc_part_2),
             listOf(R.string.core, R.string.abs)
         ),
         Exercise(
+            9,
             R.drawable.exercise_9,
             R.string.exercise_9,
             listOf(R.string.exercise_9_desc_part_1, R.string.exercise_9_desc_part_2),
             listOf(R.string.core, R.string.abs)
         ),
         Exercise(
+            10,
             R.drawable.exercise_10,
             R.string.exercise_10,
             listOf(R.string.exercise_10_desc_part_1, R.string.exercise_10_desc_part_2, R.string.exercise_10_desc_part_3),
             listOf(R.string.chest, R.string.front_deltoid, R.string.triceps)
         ),
         Exercise(
+            11,
             R.drawable.exercise_11,
             R.string.exercise_11,
             listOf(R.string.exercise_11_desc_part_1, R.string.exercise_11_desc_part_2, R.string.exercise_11_desc_part_3),
             listOf(R.string.chest, R.string.front_deltoid, R.string.triceps)
         ),
         Exercise(
+            12,
             R.drawable.exercise_12,
             R.string.exercise_12,
             listOf(
@@ -102,6 +114,7 @@ object DataSource {
             listOf(R.string.chest, R.string.front_deltoid, R.string.triceps)
         ),
         Exercise(
+            13,
             R.drawable.exercise_13,
             R.string.exercise_13,
             listOf(
@@ -116,6 +129,7 @@ object DataSource {
             listOf(R.string.chest, R.string.front_deltoid, R.string.triceps)
         ),
         Exercise(
+            14,
             R.drawable.exercise_14,
             R.string.exercise_14,
             listOf(
@@ -126,6 +140,7 @@ object DataSource {
             listOf(R.string.chest, R.string.front_deltoid)
         ),
         Exercise(
+            15,
             R.drawable.exercise_15,
             R.string.exercise_15,
             listOf(
@@ -138,6 +153,7 @@ object DataSource {
             listOf(R.string.chest, R.string.front_deltoid, R.string.triceps, R.string.abs)
         ),
         Exercise(
+            16,
             R.drawable.exercise_16,
             R.string.exercise_16,
             listOf(

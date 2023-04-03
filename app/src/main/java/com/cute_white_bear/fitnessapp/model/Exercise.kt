@@ -4,6 +4,7 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 
 data class Exercise(
+    val id: Int,
     @DrawableRes val image: Int,
     @StringRes val name: Int,
     @StringRes val description: List<Int>,
