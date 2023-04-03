@@ -165,5 +165,15 @@ object DataSource {
             ),
             listOf(R.string.chest, R.string.front_deltoid, R.string.triceps, R.string.abs)
         ),
+        Exercise(
+            R.drawable.exercise_17,
+            R.string.exercise_17,
+            listOf(
+                R.string.exercise_17_desc_part_1,
+                R.string.exercise_17_desc_part_2,
+                R.string.exercise_17_desc_part_3,
+            ),
+            listOf(R.string.lateral_deltoid, R.string.front_deltoid, R.string.trapezius, R.string.biceps)
+        ),
     )
 }
